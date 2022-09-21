@@ -1,7 +1,7 @@
 object BuildPlugin {
     object Version {
         const val gradlePlugin = "7.1.2"
-        const val kotlin = "1.6.21"
+        const val kotlin = "1.7.10"
         const val googleServices = "4.3.10"
         const val crashlytics = "2.8.1"
     }
@@ -15,9 +15,9 @@ object BuildPlugin {
 object BuildVersion {
     const val versionCode = 14
     const val versionName = "1.5"
-    const val compileSdk = 32
+    const val compileSdk = 33
     const val minSdk = 21
-    const val targetSdk = 32
+    const val targetSdk = 33
     const val buildTools = "30.0.3"
 }
 

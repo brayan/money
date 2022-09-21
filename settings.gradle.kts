@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Money"
-include ':app'
+include(":app")
+include(":feature:transaction-list:public")
+include(":feature:transaction-list:impl")
