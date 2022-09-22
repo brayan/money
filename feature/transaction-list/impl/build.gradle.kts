@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
 }
 
 android {
@@ -35,7 +36,7 @@ android {
 }
 
 dependencies {
-//    implementation(project(Module.transactionListPublic))
+    implementation(project(Module.transactionListPublic))
 
     implementation(Coroutines.core)
     implementation(Coroutines.android)
@@ -47,6 +48,19 @@ dependencies {
     implementation(AndroidX.recyclerview)
     implementation(AndroidX.constraintLayout)
     implementation(AndroidX.materialDesign)
+    implementation(AndroidX.ktx)
+
+    implementation(Compose.ui)
+    implementation(Compose.material)
+    implementation(Compose.uiToolingPreview)
+    implementation(Compose.lifecycleRuntimeKtx)
+    implementation(Compose.activity)
+
+    implementation(Hilt.android)
+    implementation(Hilt.navigationCompose)
+    implementation(Hilt.lifecycleViewModel)
+    kapt(Hilt.androidCompiler)
+    kapt(Hilt.compiler)
 
     testImplementation(Junit.junit)
     testImplementation(MockK.core)

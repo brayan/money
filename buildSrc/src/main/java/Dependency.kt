@@ -46,7 +46,7 @@ object Lifecycle {
 
 object AndroidX {
     object Versions {
-        const val ktx = "1.7.0"
+        const val ktx = "1.9.0"
         const val appcompat = "1.4.1"
         const val materialDesign = "1.5.0"
         const val browser = "1.4.0"
@@ -177,4 +177,19 @@ object Hilt {
     const val lifecycleViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Version.lifecycleViewModel}"
     const val compiler = "androidx.hilt:hilt-compiler:${Version.compiler}"
     const val navigationCompose = "androidx.hilt:hilt-navigation-compose:${Version.navigationCompose}"
+}
+
+
+object Compose {
+    object Version {
+        const val core = "1.2.1"
+        const val lifecycleRuntime = "2.5.1"
+        const val activity = "1.5.1"
+    }
+
+    const val ui = "androidx.compose.ui:ui:${Version.core}"
+    const val material = "androidx.compose.material:material:${Version.core}"
+    const val uiToolingPreview = "androidx.compose.ui:ui-tooling-preview:${Version.core}"
+    const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Version.lifecycleRuntime}"
+    const val activity = "androidx.activity:activity-compose:${Version.activity}"
 }
