@@ -1,4 +1,4 @@
-package br.com.sailboat.money.domain.model
+package br.com.sailboat.money.feature.transaction.list.impl.domain.model
 
 import java.math.BigDecimal
 import java.util.Calendar

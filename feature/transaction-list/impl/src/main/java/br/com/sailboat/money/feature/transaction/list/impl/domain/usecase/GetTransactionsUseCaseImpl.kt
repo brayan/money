@@ -1,7 +1,7 @@
-package br.com.sailboat.money.domain.usecase
+package br.com.sailboat.money.feature.transaction.list.impl.domain.usecase
 
-import br.com.sailboat.money.domain.model.Transaction
-import br.com.sailboat.money.domain.repository.TransactionRepository
+import br.com.sailboat.money.feature.transaction.list.impl.domain.model.Transaction
+import br.com.sailboat.money.feature.transaction.list.impl.domain.repository.TransactionRepository
 import kotlinx.coroutines.flow.Flow
 
 class GetTransactionsUseCaseImpl(
