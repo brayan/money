@@ -56,6 +56,7 @@ android {
 }
 
 dependencies {
+    implementation(project(Module.navigation))
     implementation(project(Module.transactionListImpl))
 
     implementation(AndroidX.ktx)

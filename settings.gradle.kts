@@ -14,5 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Money"
 include(":app")
+include(":feature:navigation")
 include(":feature:transaction-list:public")
 include(":feature:transaction-list:impl")

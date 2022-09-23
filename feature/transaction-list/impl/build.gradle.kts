@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation(project(Module.navigation))
     implementation(project(Module.transactionListPublic))
 
     implementation(Coroutines.core)
