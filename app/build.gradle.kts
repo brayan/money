@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("dagger.hilt.android.plugin")
     kotlin("android")
     kotlin("kapt")
 }
@@ -55,6 +56,10 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
     implementation(project(Module.navigation))
     implementation(project(Module.transactionListImpl))
@@ -68,7 +73,6 @@ dependencies {
 
     implementation(Hilt.android)
     implementation(Hilt.navigationCompose)
-    implementation(Hilt.lifecycleViewModel)
     kapt(Hilt.androidCompiler)
     kapt(Hilt.compiler)
 

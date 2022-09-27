@@ -4,12 +4,14 @@ object BuildPlugin {
         const val kotlin = "1.7.10"
         const val googleServices = "4.3.13"
         const val crashlytics = "2.9.1"
+        const val hilt = "2.44"
     }
 
     const val android = "com.android.tools.build:gradle:${Version.gradlePlugin}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.kotlin}"
     const val googleServices = "com.google.gms:google-services:${Version.googleServices}"
     const val crashlytics = "com.google.firebase:firebase-crashlytics-gradle:${Version.crashlytics}"
+    const val hilt = "com.google.dagger:hilt-android-gradle-plugin:${Version.hilt}"
 }
 
 object BuildVersion {
@@ -166,7 +168,7 @@ object Flipper {
 
 object Hilt {
     object Version {
-        const val core = "2.40.5"
+        const val core = "2.44"
         const val lifecycleViewModel = "1.0.0-alpha03"
         const val compiler = "1.0.0"
         const val navigationCompose = "1.0.0"
@@ -174,7 +176,6 @@ object Hilt {
 
     const val android = "com.google.dagger:hilt-android:${Version.core}"
     const val androidCompiler = "com.google.dagger:hilt-android-compiler:${Version.core}"
-    const val lifecycleViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Version.lifecycleViewModel}"
     const val compiler = "androidx.hilt:hilt-compiler:${Version.compiler}"
     const val navigationCompose = "androidx.hilt:hilt-navigation-compose:${Version.navigationCompose}"
 }

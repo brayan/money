@@ -5,10 +5,11 @@ import br.com.sailboat.money.feature.transaction.list.impl.domain.model.Transact
 import br.com.sailboat.money.feature.transaction.list.impl.domain.model.TransactionType
 import java.math.BigDecimal
 import java.util.Calendar
+import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
-class TransactionLocalDataSourceImpl : TransactionLocalDataSource {
+class TransactionLocalDataSourceImpl @Inject constructor() : TransactionLocalDataSource {
 
     override suspend fun getTransactions(): Flow<Result<List<Transaction>>> {
         val transaction = Transaction(
